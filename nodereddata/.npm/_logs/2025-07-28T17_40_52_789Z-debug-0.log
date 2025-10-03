@@ -1,0 +1,25 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.19.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/.npmrc
+5 silly config load:file:/usr/src/node-red/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm remove node-red-contrib-send-multipart-formdata
+8 verbose argv "remove" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "node-red-contrib-send-multipart-formdata"
+9 verbose logfile logs-max:10 dir:/data/.npm/_logs/2025-07-28T17_40_52_789Z-
+10 verbose logfile /data/.npm/_logs/2025-07-28T17_40_52_789Z-debug-0.log
+11 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+12 silly logfile done cleaning log files
+13 silly idealTree buildDeps
+14 silly reify mark retired [ '/data/node_modules/node-red-contrib-send-multipart-formdata' ]
+15 silly reify moves {
+15 silly reify   '/data/node_modules/node-red-contrib-send-multipart-formdata': '/data/node_modules/.node-red-contrib-send-multipart-formdata-KZ7PhXYP'
+15 silly reify }
+16 silly REMOVE node_modules/node-red-contrib-send-multipart-formdata
+17 verbose cwd /data
+18 verbose os Linux 5.15.167.4-microsoft-standard-WSL2
+19 verbose node v20.19.0
+20 verbose npm  v10.8.2
+21 verbose exit 0
+22 info ok

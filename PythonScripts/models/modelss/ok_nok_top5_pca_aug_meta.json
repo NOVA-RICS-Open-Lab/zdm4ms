@@ -1,0 +1,17 @@
+{
+  "selected_features": [
+    "Média PWM Extrusora",
+    "Desvio Padrão PWM Extrusora",
+    "Tempo Fora do Intervalo Extrusora (%)",
+    "Desvio Padrão temp_nozzle",
+    "Máximo Delta temp_nozzle"
+  ],
+  "pca_n_components_": 4,
+  "label_mapping": {
+    "0": "NOK",
+    "1": "OK"
+  },
+  "random_state": 42,
+  "noise_factor": 0.1,
+  "n_augmentations": 5
+}

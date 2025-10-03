@@ -1,0 +1,10 @@
+{
+    "name": "node-red-project",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "node-red-contrib-dynamic-websocket": "~1.0.7",
+        "node-red-contrib-send-multipart": "~0.3.9"
+    }
+}

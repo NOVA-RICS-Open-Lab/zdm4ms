@@ -1,0 +1,76 @@
+services:
+  aasx-server:
+    container_name: aasx-server
+    image: docker.io/adminshellio/aasx-server-blazor-for-demo:0.3.1.284-aasv3-alpha-latest
+    restart: unless-stopped
+    ports:
+      - 5001:5001
+    depends_on:
+      - node-red-middleware
+    volumes:
+      - "./AASdata:/AasxServerBlazor/aasxs"
+    command: --no-security --urls http://0.0.0.0:5001 --external-blazor http://192.168.250.102:5001
+    networks:
+      - zdm_network
+
+  node-red-middleware:
+    container_name: nodered
+    image: nodered/node-red:latest
+    restart: always
+    ports:
+      - "1880:1880"
+    volumes:
+      - ./nodereddata:/data
+    networks:
+      - zdm_network
+
+  python_monitor:
+    build: ./PythonScripts/monitor
+    # image: monitor
+    container_name: monitor
+    environment:
+      MIDDLEWARE_URL: "http://host.docker.internal"
+      CSV_URL: "host.docker.internal:5004"
+      AAS_URL: = "host.docker.internal:5001"
+      MODELS_URL: = "host.docker.internal:5002"
+      PORT: 5000
+      PRINTER_API_KEY: "93c4GJTZNz1XIwUrLHEzofv5DdBNSPWLUd-FjCXFwsY"
+    ports:
+      - "5000:5000"
+    depends_on:
+      - node-red-middleware
+    networks:
+      - zdm_network
+
+  python_models:
+    container_name: models
+    build: ./PythonScripts/models
+    environment:
+      MIDDLEWARE_URL: "http://host.docker.internal"
+      API_KEY: "93c4GJTZNz1XIwUrLHEzofv5DdBNSPWLUd-FjCXFwsY"
+    ports:
+      - "5002:5002"
+    depends_on:
+      - node-red-middleware
+    networks:
+      - zdm_network
+
+  python_csv:
+    build: ./PythonScripts/csv
+    # image: csv
+    container_name: csv
+    environment:
+      CSV_FILENAME: "test.csv"
+      PORT: 5004
+    ports:
+      - "5004:5004"
+    depends_on:
+    - node-red-middleware
+    volumes:
+      - ./CSVdata:/app/data
+    networks:
+      - zdm_network
+
+networks:
+  zdm_network:
+    driver: bridge
