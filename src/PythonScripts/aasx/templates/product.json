@@ -1,0 +1,249 @@
+{
+    "assetAdministrationShells": [
+        {
+            "idShort": "Product_91",
+            "id": "http://zdm/aas/product_91",
+            "description": [
+                {
+                    "language": "en",
+                    "text": "Product Quadrado com id 91"
+                }
+            ],
+            "assetInformation": {
+                "assetKind": "Instance",
+                "globalAssetId": "http://zdm/assets/product_91",
+                "assetType": "Product"
+            },
+            "derivedFrom": {
+                "type": "ExternalReference",
+                "keys": [
+                    {
+                        "type": "AssetAdministrationShell",
+                        "value": "http://zdm/aas/product_quadrado"
+                    }
+                ]
+            },
+            "submodels": [
+                {
+                    "type": "ModelReference",
+                    "keys": [
+                        {
+                            "type": "Submodel",
+                            "value": "http://zdm/submodels/product_91_data"
+                        }
+                    ]
+                },
+                {
+                    "type": "ModelReference",
+                    "keys": [
+                        {
+                            "type": "Submodel",
+                            "value": "http://zdm/submodels/process_product_91"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "submodels": [
+        {
+            "idShort": "ProductData",
+            "id": "http://zdm/submodels/product_91_data",
+            "kind": "Template",
+            "submodelElements": [
+                {
+                    "idShort": "Location",
+                    "modelType": "Property",
+                    "valueType": "xs:string",
+                    "value": "Factory Floor"
+                },
+                {
+                    "idShort": "State",
+                    "modelType": "Property",
+                    "valueType": "xs:string",
+                    "value": "REPLACESTATE"
+                },
+                {
+                    "idShort": "Type",
+                    "modelType": "ReferenceElement",
+                    "value": {
+                        "type": "ModelReference",
+                        "keys": [
+                            {
+                                "type": "AssetAdministrationShell",
+                                "value": "http://zdm/submodels/producttype_quadrado"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "idShort": "ProductProcess",
+            "id": "http://zdm/submodels/process_product_91",
+            "kind": "Instance",
+            "description": [
+                {
+                    "language": "en",
+                    "text": "Printing process for product 91"
+                }
+            ],
+            "submodelElements": [
+                {
+                    "idShort": "AssociatedOperations",
+                    "modelType": "SubmodelElementCollection",
+                    "value": [
+                        {
+                            "idShort": "Operation_Print",
+                            "modelType": "SubmodelElementCollection",
+                            "value": [
+                                {
+                                    "idShort": "Description",
+                                    "modelType": "Property",
+                                    "valueType": "xs:string",
+                                    "value": "Operation responsible for printing product 91"
+                                },
+                                {
+                                    "idShort": "AssociatedResource",
+                                    "modelType": "ReferenceElement",
+                                    "value": {
+                                        "type": "ModelReference",
+                                        "keys": [
+                                            {
+                                                "type": "AssetAdministrationShell",
+                                                "value": "http://zdm/aas/resource_printer_1"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "idShort": "AssociatedSkill",
+                                    "modelType": "SubmodelElementCollection",
+                                    "value": [
+                                        {
+                                            "idShort": "Skill_Reference",
+                                            "modelType": "ReferenceElement",
+                                            "value": {
+                                                "type": "ModelReference",
+                                                "keys": [
+                                                    {
+                                                        "type": "Submodel",
+                                                        "value": "http://zdm/submodels/skill_3d_printing_quadrado"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "idShort": "AssociatedValues",
+                                    "modelType": "SubmodelElementCollection",
+                                    "value": [
+                                        {
+                                            "idShort": "timestamp",
+                                            "valueType": "xs:long",
+                                            "modelType": "Property"
+                                        },
+                                        {
+                                            "idShort": "nozzle_temp",
+                                            "valueType": "xs:long",
+                                            "modelType": "Property"
+                                        },
+                                        {
+                                            "idShort": "nozzle_target",
+                                            "valueType": "xs:long",
+                                            "modelType": "Property"
+                                        },
+                                        {
+                                            "idShort": "bed_temp",
+                                            "valueType": "xs:long",
+                                            "modelType": "Property"
+                                        },
+                                        {
+                                            "idShort": "bed_target",
+                                            "valueType": "xs:string",
+                                            "modelType": "Property"
+                                        },
+                                        {
+                                            "idShort": "x",
+                                            "valueType": "xs:string",
+                                            "modelType": "Property"
+                                        },
+                                        {
+                                            "idShort": "y",
+                                            "valueType": "xs:string",
+                                            "modelType": "Property"
+                                        },
+                                        {
+                                            "idShort": "z",
+                                            "valueType": "xs:string",
+                                            "modelType": "Property"
+                                        },
+                                        {
+                                            "idShort": "extrusion_level",
+                                            "valueType": "xs:string",
+                                            "modelType": "Property"
+                                        },
+                                        {
+                                            "idShort": "filename",
+                                            "valueType": "xs:string",
+                                            "modelType": "Property"
+                                        },
+                                        {
+                                            "idShort": "nozzle_delta",
+                                            "valueType": "xs:string",
+                                            "modelType": "Property"
+                                        },
+                                        {
+                                            "idShort": "bed_delta",
+                                            "valueType": "xs:string",
+                                            "modelType": "Property"
+                                        },
+                                        {
+                                            "idShort": "nozzle_pwm",
+                                            "valueType": "xs:string",
+                                            "modelType": "Property"
+                                        },
+                                        {
+                                            "idShort": "bed_pwm",
+                                            "valueType": "xs:string",
+                                            "modelType": "Property"
+                                        },
+                                        {
+                                            "idShort": "speed_factor",
+                                            "valueType": "xs:string",
+                                            "modelType": "Property"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "idShort": "Parameters",
+                                    "modelType": "SubmodelElementCollection",
+                                    "value": [
+                                        {
+                                            "idShort": "Gcode",
+                                            "modelType": "Property",
+                                            "valueType": "xs:string",
+                                            "value": "REPLACEGCODE"
+                                        },
+                                        {
+                                            "idShort": "Speed",
+                                            "modelType": "Property",
+                                            "valueType": "xs:string",
+                                            "value": "REPLACESPEED"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "idShort": "AssociatedQualityTests",
+                    "modelType": "SubmodelElementCollection",
+                    "value": []
+                }
+            ]
+        }
+    ]
+}

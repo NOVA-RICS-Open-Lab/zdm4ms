@@ -1,0 +1,92 @@
+{
+    "idShort": "Quality_Test_Measurements",
+    "modelType": "SubmodelElementCollection",
+    "value": [
+        {
+            "idShort": "Operation_Check_Measurements",
+            "modelType": "SubmodelElementCollection",
+            "value": [
+                {
+                    "idShort": "RequiredSkill",
+                    "modelType": "ReferenceElement",
+                    "value": {
+                        "type": "ModelReference",
+                        "keys": [
+                            {
+                                "type": "Submodel",
+                                "value": "http://zdm/submodels/skill_measurements"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "idShort": "AssociatedResource",
+                    "modelType": "ReferenceElement",
+                    "value": {
+                        "type": "ModelReference",
+                        "keys": [
+                            {
+                                "type": "AssetAdministrationShell",
+                                "value": "http://zdm/aas/resource_operator_1"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "idShort": "AssociatedMeasurements",
+                    "modelType": "SubmodelElementCollection",
+                    "value": [
+                        {
+                            "idShort": "Largura",
+                            "modelType": "SubmodelElementCollection",
+                            "value": [
+                                {
+                                    "idShort": "ValueType",
+                                    "modelType": "Property",
+                                    "valueType": "xs:string",
+                                    "value": "REPLACEVALORTIPOLARGURA"
+                                },
+                                {
+                                    "idShort": "Uncertainty",
+                                    "modelType": "Property",
+                                    "valueType": "xs:string",
+                                    "value": "REPLACEINCERTEZALARGURA"
+                                },
+                                {
+                                    "idShort": "Value",
+                                    "modelType": "Property",
+                                    "valueType": "xs:string",
+                                    "value": "REPLACEVALORLARGURA"
+                                }
+                            ]
+                        },
+                        {
+                            "idShort": "Comprimento",
+                            "modelType": "SubmodelElementCollection",
+                            "value": [
+                                {
+                                    "idShort": "ValueType",
+                                    "modelType": "Property",
+                                    "valueType": "xs:string",
+                                    "value": "REPLACEVALORTIPOCOMPRIMENTO"
+                                },
+                                {
+                                    "idShort": "Uncertainty",
+                                    "modelType": "Property",
+                                    "valueType": "xs:string",
+                                    "value": "REPLACEINCERTEZACOMPRIMENTO"
+                                },
+                                {
+                                    "idShort": "Value",
+                                    "modelType": "Property",
+                                    "valueType": "xs:string",
+                                    "value": "REPLACEVALORCOMPRIMENTO"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

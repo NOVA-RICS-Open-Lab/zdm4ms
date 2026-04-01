@@ -1,0 +1,6 @@
+gradio
+ollama
+requests
+fastapi
+uvicorn
+jinja2

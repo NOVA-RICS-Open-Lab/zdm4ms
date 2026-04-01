@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explanable AI Page</title>
+    <style>
+        /* Basic setup */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Create the main two-column container */
+        .container {
+            display: flex;
+            height: 95vh; /* Make it fill most of the screen height */
+        }
+
+        /* Style for the left and right panes */
+        .left-pane {
+            flex: 6; /* Each pane takes up 50% of the space */
+            padding: 20px;
+            box-sizing: border-box; /* Ensures padding doesn't break layout */
+        }
+        
+        .right-pane {
+            flex: 4; /* Each pane takes up 50% of the space */
+            padding: 20px;
+            box-sizing: border-box; /* Ensures padding doesn't break layout */
+        }
+
+        .left-pane {
+            background-color: #ffffff;
+            border-right: 2px solid #ccc;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right-pane {
+            background-color: #e9e9e9;
+            /* Flex column to stack links on top of the iframe */
+            display: flex;
+            flex-direction: column; 
+        }
+
+        /* Style for the image on the left */
+        .left-pane img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        /* Navigation links on the right */
+        .right-pane nav {
+            margin-bottom: 15px;
+        }
+
+        .right-pane nav a {
+            margin-right: 15px;
+            font-size: 1.1em;
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+        }
+        .right-pane nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style for the embedded page frame */
+        #content-frame {
+            width: 100%;
+            height: 100%; /* Make the iframe fill the rest of the pane */
+            border: 1px solid #aaa;
+            border-radius: 8px;
+            background-color: #fff; /* Show white before it loads */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-pane">
+            <h2>{{ title }}</h2>
+            
+            <iframe 
+                srcdoc="{{ lime_html }}"
+                style="width: 100%; height: 70%; border: 1px solid #aaa; border-radius: 8px; background-color: #fff;"
+                title="LIME Explanation Output">
+                Your browser does not support iframes.
+            </iframe>
+            
+            <h2>Explanation Description</h2>
+
+            <p style="margin-top: 15px;">
+                {{ text }}
+            </p>
+        </div>
+
+        <div class="right-pane">
+            <iframe id="content-frame" src="{{ chatbot }}" title="Dynamic Content Area" allow="autoplay; camera; microphone; clipboard-read; clipboard-write;">
+            </iframe>
+        </div>
+    </div>
+
+</body>
+</html>
+

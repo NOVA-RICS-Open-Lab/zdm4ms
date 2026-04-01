@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="76054fc9-9db9-4991-9b75-a4e0d39c8ae8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/aasx/aasx_aux.py" beforeDir="false" afterPath="$PROJECT_DIR$/aasx/aasx_aux.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/explainableai/pagecreator/explainableai_page_creator.py" beforeDir="false" afterPath="$PROJECT_DIR$/explainableai/pagecreator/explainableai_page_creator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/printer/printer_aux.py" beforeDir="false" afterPath="$PROJECT_DIR$/printer/printer_aux.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nodereddata/.config.nodes.json" beforeDir="false" afterPath="$PROJECT_DIR$/../nodereddata/.config.nodes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nodereddata/.config.nodes.json.backup" beforeDir="false" afterPath="$PROJECT_DIR$/../nodereddata/.config.nodes.json.backup" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="35IoUHXLYFHkcshub2CtltLQGxA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.printer_aux_opcua.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev-rmd&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/LazyT/Desktop/ZDMImplementation/PythonScripts/printer&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LazyT\Desktop\ZDMImplementation\PythonScripts\printer" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-PY-252.25557.178" />
+        <option value="bundled-python-sdk-ce6832f46686-7b97d883f26b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.25557.178" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="76054fc9-9db9-4991-9b75-a4e0d39c8ae8" name="Changes" comment="" />
+      <created>1762806965369</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762806965369</updated>
+      <workItem from="1762806968246" duration="186000" />
+      <workItem from="1762867961220" duration="609000" />
+      <workItem from="1770126666288" duration="4660000" />
+      <workItem from="1770145173228" duration="1461000" />
+      <workItem from="1770826014353" duration="260000" />
+      <workItem from="1770908740549" duration="271000" />
+      <workItem from="1772722556735" duration="7443000" />
+      <workItem from="1772736639104" duration="525000" />
+      <workItem from="1773150962229" duration="2310000" />
+      <workItem from="1773672623619" duration="31000" />
+      <workItem from="1774527042141" duration="33000" />
+      <workItem from="1774531672808" duration="10199000" />
+      <workItem from="1774560512453" duration="871000" />
+      <workItem from="1774744301541" duration="12000" />
+      <workItem from="1774873478850" duration="5000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/monitor/monitor_aux.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/printer_aux_py$printer_aux_opcua.coverage" NAME="printer_aux_opcua Coverage Results" MODIFIED="1770128344277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/printer" />
+  </component>
+</project>

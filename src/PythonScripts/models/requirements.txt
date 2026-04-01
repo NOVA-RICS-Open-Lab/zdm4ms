@@ -1,0 +1,6 @@
+flask
+requests
+pandas
+joblib
+scikit-learn==1.5.2
+xgboost==2.0.3

@@ -1,0 +1,177 @@
+{
+    "assetAdministrationShells": [
+        {
+            "idShort": "Product_91",
+            "id": "http://zdm/aas/product_91",
+            "description": [
+                {
+                    "language": "en",
+                    "text": "Product Quadrado com id 91"
+                }
+            ],
+            "assetInformation": {
+                "assetKind": "Instance",
+                "globalAssetId": "http://zdm/assets/product_91",
+                "assetType": "Product"
+            },
+            "derivedFrom": {
+                "type": "ExternalReference",
+                "keys": [
+                    {
+                        "type": "AssetAdministrationShell",
+                        "value": "http://zdm/aas/product_quadrado"
+                    }
+                ]
+            },
+            "submodels": [
+                {
+                    "type": "ModelReference",
+                    "keys": [
+                        {
+                            "type": "Submodel",
+                            "value": "http://zdm/submodels/product_91_data"
+                        }
+                    ]
+                },
+                {
+                    "type": "ModelReference",
+                    "keys": [
+                        {
+                            "type": "Submodel",
+                            "value": "http://zdm/submodels/process_product_91"
+                        }
+                    ]
+                },
+                {
+                    "type": "ModelReference",
+                    "keys": [
+                        {
+                            "type": "Submodel",
+                            "value": "http://zdm/submodels/subproducts_product_91"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "submodels": [
+        {
+            "idShort": "SubProducts",
+            "id": "http://zdm/submodels/subproducts_product_91",
+            "kind": "Instance",
+            "description": [
+                {
+                    "language": "en",
+                    "text": "SubProducts that compose this product"
+                }
+            ],
+            "submodelElements": []
+        },
+        {
+            "idShort": "ProductProcess",
+            "id": "http://zdm/submodels/process_product_91",
+            "kind": "Instance",
+            "description": [
+                {
+                    "language": "en",
+                    "text": "Process for creating product 91"
+                }
+            ],
+            "submodelElements": [
+                {
+                    "idShort": "AssociatedOperations",
+                    "modelType": "SubmodelElementCollection",
+                    "value": [
+                        {
+                            "idShort": "Operation_Assembly",
+                            "modelType": "SubmodelElementCollection",
+                            "value": [
+                                {
+                                    "idShort": "Description",
+                                    "modelType": "Property",
+                                    "valueType": "xs:string",
+                                    "value": "Operation responsible for assembling product 91"
+                                },
+                                {
+                                    "idShort": "AssociatedResource",
+                                    "modelType": "ReferenceElement",
+                                    "value": {
+                                        "type": "ModelReference",
+                                        "keys": [
+                                            {
+                                                "type": "AssetAdministrationShell",
+                                                "value": "http://zdm/aas/resource_operator_1"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "idShort": "AssociatedSkill",
+                                    "modelType": "SubmodelElementCollection",
+                                    "value": [
+                                        {
+                                            "idShort": "Skill_Reference",
+                                            "modelType": "ReferenceElement",
+                                            "value": {
+                                                "type": "ModelReference",
+                                                "keys": [
+                                                    {
+                                                        "type": "Submodel",
+                                                        "value": "http://zdm/submodels/skill_assembly"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "idShort": "AssociatedQualityTests",
+                    "modelType": "SubmodelElementCollection",
+                    "value": []
+                }
+            ]
+        },
+        {
+            "idShort": "ProductData",
+            "id": "http://zdm/submodels/product_91_data",
+            "kind": "Template",
+            "description": [
+                {
+                    "language": "en",
+                    "text": "Product type representing an object design named 'Complete'."
+                }
+            ],
+            "submodelElements": [
+                {
+                    "idShort": "Location",
+                    "modelType": "Property",
+                    "valueType": "xs:string",
+                    "value": "Factory Floor"
+                },
+                {
+                    "idShort": "State",
+                    "modelType": "Property",
+                    "valueType": "xs:string",
+                    "value": "REPLACESTATE"
+                },
+                {
+                    "idShort": "Type",
+                    "modelType": "ReferenceElement",
+                    "value": {
+                        "type": "ModelReference",
+                        "keys": [
+                            {
+                                "type": "AssetAdministrationShell",
+                                "value": "http://zdm/submodels/producttype_complete"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

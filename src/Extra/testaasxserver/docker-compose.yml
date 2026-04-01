@@ -1,0 +1,33 @@
+services:
+  # aasx-server:
+  #   container_name: aasxserver
+  #   image: adminshellio/aasx-server-blazor-for-demo:0.3.1.503-aasv3-alpha-latest
+  #   restart: unless-stopped
+  #   ports:
+  #     - 5001:5001
+  #   volumes:
+  #     - "./aasdata:/AasxServerBlazor/aasxs"
+  #   command: --no-security --urls http://0.0.0.0:5001 --external-blazor http://192.168.250.102:5001
+
+  # aasx-server:
+  #   container_name: aasxserver
+  #   image: docker.io/adminshellio/aasx-server-blazor-for-demo:0.3.1.284-aasv3-alpha-latest
+  #   restart: unless-stopped
+  #   ports:
+  #     - 5001:5001
+  #   volumes:
+  #     - "./aasdata:/AasxServerBlazor/aasxs"
+  #   command: --no-security --urls http://0.0.0.0:5001 --external-blazor http://192.168.250.102:5001
+
+# Para teste
+  aasx-server:  
+    container_name: aasxserver  
+    image: docker.io/adminshellio/aasx-server-blazor-for-demo:0.3.1.284-aasv3-alpha-latest
+    restart: unless-stopped  
+    ports:  
+      - 5001:5001  
+    environment:  
+      - Kestrel__Endpoints__Http__Url=http://*:5001  
+    volumes:  
+      - ./aasdata:/AasxServerBlazor/aasxs 
+    command: --no-security --external-blazor http://localhost:5001

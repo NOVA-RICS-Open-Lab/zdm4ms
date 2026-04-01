@@ -1,0 +1,93 @@
+{
+    "idShort": "Quality_Test_Z1",
+    "modelType": "SubmodelElementCollection",
+    "value": [
+        {
+            "idShort": "Operation_Check_Z1",
+            "modelType": "SubmodelElementCollection",
+            "value": [
+                {
+                    "idShort": "AssociatedSkill",
+                    "modelType": "ReferenceElement",
+                    "value": {
+                        "type": "ModelReference",
+                        "keys": [
+                            {
+                                "type": "Submodel",
+                                "value": "http://zdm/submodels/skill_predict_z1"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "idShort": "AssociatedResource",
+                    "modelType": "ReferenceElement",
+                    "value": {
+                        "type": "ModelReference",
+                        "keys": [
+                            {
+                                "type": "AssetAdministrationShell",
+                                "value": "http://zdm/aas/resource_host_1"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "idShort": "Inference",
+                    "modelType": "SubmodelElementCollection",
+                    "value": [
+                        {
+                            "idShort": "AssociatedModel",
+                            "modelType": "ReferenceElement",
+                            "value": {
+                                "type": "ModelReference",
+                                "keys": [
+                                    {
+                                        "type": "AssetAdministrationShell",
+                                        "value": "http://zdm/aas/model_predict_z1"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "idShort": "AssociatedInputMetrics",
+                            "modelType": "Property",
+                            "valueType": "xs:string",
+                            "value": "REPLACEIINPUTMETRICS"
+                        },
+                        {
+                            "idShort": "Result",
+                            "modelType": "Property",
+                            "valueType": "xs:string",
+                            "value": "REPLACEIRESULT"
+                        },
+                        {
+                            "idShort": "AssociatedExplanations",
+                            "modelType": "SubmodelElementCollection",
+                            "value": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "idShort": "AssociatedRules",
+            "modelType": "ReferenceElement",
+            "value": {
+                "type": "ModelReference",
+                "keys": [
+                    {
+                        "type": "Submodel",
+                        "value": "http://zdm/submodels/managementrule_z1"
+                    }
+                ]
+            }
+        },
+        {
+            "idShort": "Result",
+            "modelType": "Property",
+            "valueType": "xs:string",
+            "value": "REPLACEQTRESULT"
+        }
+    ]
+}

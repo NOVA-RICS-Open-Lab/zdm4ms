@@ -1,0 +1,25 @@
+{
+    "idShort": "Explanation_1",
+    "modelType": "SubmodelElementCollection",
+    "value": [
+        {
+            "idShort": "Result",
+            "modelType": "Property",
+            "valueType": "xs:string",
+            "value": "REPLACEERESULT"
+        },
+        {
+            "idShort": "AssociatedExplainer",
+            "modelType": "ReferenceElement",
+            "value": {
+                "type": "ModelReference",
+                "keys": [
+                    {
+                        "type": "AssetAdministrationShell",
+                        "value": "http://zdm/aas/explainer_model_predict_z1"
+                    }
+                ]
+            }
+        }
+    ]
+}
